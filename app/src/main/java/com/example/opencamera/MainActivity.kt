@@ -20,7 +20,9 @@ import androidx.activity.result.contract.ActivityResultContracts
 import androidx.annotation.RequiresApi
 import androidx.core.content.PermissionChecker
 import com.bumptech.glide.Glide
+import com.example.opencamera.camerax.CameraxActivity
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
+import kotlinx.android.synthetic.main.activity_main.*
 
 @RequiresApi(Build.VERSION_CODES.M)
 
@@ -59,6 +61,11 @@ class MainActivity : AppCompatActivity() {
             if (permissionGranted) {
                 openCameraInterface()
             }
+        }
+
+        cameraxButtonId.setOnClickListener {
+            val intent = Intent(this, CameraxActivity::class.java)
+            startActivity(intent)
         }
     }
 

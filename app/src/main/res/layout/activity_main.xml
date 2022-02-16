@@ -38,4 +38,14 @@
         android:layout_below="@id/circleImageViewId"
         android:layout_marginTop="50dp"
         android:layout_centerInParent="true"/>
+
+    <Button
+        android:id="@+id/cameraxButtonId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CameraX"
+        android:textAllCaps="false"
+        android:layout_below="@id/captureImageId"
+        android:layout_marginTop="20dp"
+        android:layout_centerInParent="true"/>
 </RelativeLayout>
