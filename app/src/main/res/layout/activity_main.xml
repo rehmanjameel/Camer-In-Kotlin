@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textViewId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Image Captured from camera"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:layout_marginTop="20dp" />
+
+    <ImageView
+        android:id="@+id/circleImageViewId"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:src="@drawable/ic_baseline_person_24"
+        android:layout_centerInParent="true"
+        app:civ_border_width="1dp"
+        android:layout_below="@id/textViewId"/>
+
+    <Button
+        android:id="@+id/captureImageId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Capture Image"
+        android:textAllCaps="false"
+        android:layout_below="@id/circleImageViewId"
+        android:layout_marginTop="50dp"
+        android:layout_centerInParent="true"/>
+</RelativeLayout>
